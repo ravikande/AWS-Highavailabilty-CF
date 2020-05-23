@@ -1,0 +1,22 @@
+[
+	{
+		"ParameterKey": "EnvironmentName",
+		"ParameterValue": "RkProject2"
+	},
+	{
+		"ParameterKey": "KeyPair",
+		"ParameterValue": "Bastion Host KEYPAIR"
+	},
+	{
+		"ParameterKey": "AMIID",
+		"ParameterValue": "ami-003634241a8fcdec0"
+	},
+	{
+		"ParameterKey": "InstanceProfile",
+		"ParameterValue": "ROLE NAME"
+	},
+	{
+		"ParameterKey": "SSHLocation",
+		"ParameterValue": "REMOTE MACHINE IP/32"
+	}
+]
