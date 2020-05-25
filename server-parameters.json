@@ -4,10 +4,6 @@
 		"ParameterValue": "RkProject2"
 	},
 	{
-		"ParameterKey": "KeyPair",
-		"ParameterValue": "Bastion Host KEYPAIR"
-	},
-	{
 		"ParameterKey": "AMIID",
 		"ParameterValue": "ami-003634241a8fcdec0"
 	},
