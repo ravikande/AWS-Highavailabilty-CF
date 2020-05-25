@@ -6,9 +6,6 @@ Parameters:
     EnvironmentName:
         Description: An environment name that will be prefixed to resource names
         Type: String
-    KeyPair:
-        Description: KeyPair to Login in to Webservers
-        Type: String 
     AMIID:
         Description: AMI-ID for web server
         Type: String
@@ -73,7 +70,6 @@ Resources:
           unzip -o 2ndproject-CF-HAsite
           cp 2ndproject-CF-HAsite/index.html index.html
       ImageId: !Ref AMIID
-      KeyName: !Ref KeyPair
       IamInstanceProfile: !Ref InstanceProfile
       SecurityGroups:
       - Ref: WebServerSecGroup
@@ -144,7 +140,6 @@ Resources:
       InstanceType: t3.medium
       SecurityGroupIds: [!Ref 'InstanceSecurityGroup']
       SubnetId: subnet-0536f52d01ce6013b
-      KeyName: !Ref KeyPair
       ImageId: !Ref AMIID
   InstanceSecurityGroup:
     Type: AWS::EC2::SecurityGroup
